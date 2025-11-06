@@ -14,7 +14,7 @@ export const MultiStepForm = () => {
   const handlePrev =()=>dispatch({type:'prev_step'})
   const handleReset=()=>dispatch({type:'reset_form'})
   const handleSubmit =()=>{
-    alert ("form completed")
+    alert ("🎉 Form completed successfully!")
     handleReset()
   }
 
