@@ -9,3 +9,12 @@ It allows users to enter their profile and contact details in multiple steps.
 [👉 MultiStepForm.jsx on GitHub](https://github.com/TasnimKulle/React-chalangesL5/blob/main/src/MultiStepForm.jsx)
 
 ---
+
+# ⭐ LanguageContext to manage the selected language.
+
+🔗 **View Source Code:**  
+[👉 LangContext.js on GitHub](https://github.com/TasnimKulle/React-chalangesL5/blob/main/src/LangContext.js)
+[👉 LangueComponant.jsx on GitHub](https://github.com/TasnimKulle/React-chalangesL5/blob/main/src/LangueComponant.jsx)
+[👉 App.jsx on GitHub](https://github.com/TasnimKulle/React-chalangesL5/blob/main/src/App.jsx)
+
+- <p aling='center'> <img src='./src/assets/a15.png' alt='img output' with=400PX /></p>
