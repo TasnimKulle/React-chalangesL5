@@ -5,6 +5,7 @@ import LangueComponant from "./LangueComponant";
 import CartContext from "./CartContext";
 import ProductItem from "./ProductItem";
 import { CartSummary } from "./CartSummary";
+import { MyForm } from "./MyForm";
 function App() {
   const [cartItems, setCartTtems] = useState([]);
   const addToCart = (item) => {
@@ -25,6 +26,7 @@ function App() {
   };
   return (
     <div>
+      <MyForm/>
       <CartContext.Provider value={value}>
         <h1>Product itams</h1>
         <ProductItem itemId={1} itemName={"Baris"} price={20} />
