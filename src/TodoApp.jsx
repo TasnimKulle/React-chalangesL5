@@ -48,16 +48,20 @@ export const TodoApp = () => {
               </button>
             </div>
           </form>
-          <div>
+          <div className="space-y-3">
             {todos.map((todo) => (
-              <div key={todo.id}>
+              <div key={todo.id} className="flex items-center gap-3 p-3 bg-gray-100
+              hover:bg-gray-200 transition-colors group rounded">
                 <input
                   type="checkbox"
                   checked={todo.completed}
-                  onChange={() => toggleTodo(todo.id)}
+                  onChange={() => toggleTodo(todo.id)
+
+                  }
+                  className=" h-5 w-5 rounded "
                 />
                 <span
-                  className={` ${
+                  className={` flex-1 ${
                     todo.completed
                       ? "text-gray-400 line-through"
                       : "text-gray-700"
@@ -65,7 +69,9 @@ export const TodoApp = () => {
                 >
                   {todo.text}
                 </span>
-                <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+                <button 
+                className="opacity-0 group-hover:opacity-100 px-2 py-1 transition-opacity text-red-600 font-semibold"
+                onClick={() => deleteTodo(todo.id)}>Delete</button>
               </div>
             ))}
           </div>
