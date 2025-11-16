@@ -7,6 +7,7 @@ import ProductItem from "./ProductItem";
 import { CartSummary } from "./CartSummary";
 import { MyForm } from "./MyForm";
 import { ContectApp } from "./ContectApp";
+import { TodoApp } from "./TodoApp";
 function App() {
   const [cartItems, setCartTtems] = useState([]);
   const addToCart = (item) => {
@@ -27,6 +28,7 @@ function App() {
   };
   return (
     <div>
+      <TodoApp/>
       <ContectApp/>
       <MyForm/>
       <CartContext.Provider value={value}>
